@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_change_entry"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Entry"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@color/white"
+        android:enabled="false"
+        android:id="@+id/etDescriptionToDEL"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cost:"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:inputType="numberDecimal"
+        android:id="@+id/etInitCostToDEL"
+        android:enabled="false"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date on Receipt:"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:enabled="false"
+        android:id="@+id/etDateReceiptToDEL"
+        android:inputType="none"
+        android:layout_gravity="center_vertical"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Added to App:"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@color/white"
+        android:id="@+id/etTodayDateToDEL"
+        android:enabled="false"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VAT Included:"
+        android:textColor="@color/white"
+        android:buttonTint="@color/colorPrimaryDark"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkAddVATToDEL"
+        android:enabled="false"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final Cost:"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@color/white"
+        android:id="@+id/etFinalCostToDEL"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Paid"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:id="@+id/chkExpensePaid"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:onClick="btnDeleteOnClick"
+            android:id="@+id/btnDelete"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:onClick="btnUpdateOnClick"
+            android:id="@+id/btnExpensePaid"
+            />
+    </GridLayout>
+</LinearLayout>

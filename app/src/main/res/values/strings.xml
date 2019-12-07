@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyExpenses</string>
+    <string name="title_activity_add_expense">Add Expense</string>
+    <string name="title_activity_change_entry">Update Expense</string>
+    <string name="lbl_cost_with_vat">Cost with VAT: </string>
+    <string name="lbl_date_on_receipt">Date on Receipt: </string>
+    <string name="lbl_date_added_to_app">Date Added to App: </string>
+    <string name="lbl_date_paid_unpaid">Date Paid: Unpaid!</string>
+    <string name="lbl_date_paid">Date Paid: </string>
+</resources>
